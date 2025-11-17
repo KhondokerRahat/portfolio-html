@@ -3,11 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="portfolio, html, HTML, khondoker rahat, Khondoker Rahat, khondokerrahat">
+    <meta name="author" content="Khondoker Rahat">
     <title>My Portfolio</title>
+
+    <!-- Font-awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+    <!-- Google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> 
+
+    <style>
+        body {
+            background-color: rgba(217, 215, 213);
+            font-family: "Roboto", sans-serif;
+        }
+    </style>
 </head>
 <body>
-    <!-- Section: navbar-->
-     <nav>
+    <!-- Header: navbar-->
+     <header>
+        <nav>
         <ul>
              <li>
                 <a href="#about">About Me</a>
@@ -23,19 +42,20 @@
             </li>
         </ul>
      </nav>
-     <!--Section: intro-->
-    <header id="intro">
+     </header>
+    
+<main>
+         <!--Section: Intro-->
+    <section id="intro">
      <h1>Khondoker Rahat</h1>
      <em>
         <p>Future Web Developer and Student of  Computer Science and Engineering </p>
     </em>
      <a href="https://www.facebook.com/khondoker.rahat.1/"><img src="./images/rahat.jpg" alt="Khondoker Rahat" height="150"></a>
-     
-     
      <hr/>
-    </header>
+    </section>
 
-    <!-- Section: about me -->
+    <!-- Section: About me -->
      <section id="about">
         <h2>About Me</h2>
         <p><strong>Experience:</strong> I have no working exprience in web development </p>
@@ -57,18 +77,42 @@
         <tbody>
             <tr>
                 <td>HTML</td>
-                <td>Expart</td>
+                <td rowspan="2">Expart</td>
             </tr>
             <tr>
                 <td>CSS</td>
-                <td>Expart</td>
             </tr>
             <tr>
                 <td>JavaScript</td>
                 <td>Intermediate</td>
             </tr>
         </tbody>
-     </table>    
+     </table>
+
+    <div>
+         <h3>Skill Progress</h3>
+
+      <div>
+        <label for="htmlProgress">HTML : </label>
+        <progress id="htmlProgress" value="90" max="100">90%</progress>  
+      </div>
+
+      <div> 
+         <label for="cssProgress">CSS : </label>
+         <progress id="cssProgress" value="85" max="100">85%</progress>    
+      </div>
+
+      <div>
+         <label for="jsProgress">Javascript : </label>
+         <progress id="jsProgress" value="75" max="100">75%</progress>    
+      </div>
+    </div>
+    
+    <div>
+        <h3>Experience Level</h3>
+        <label for="experiencelevel">Experience : </label>
+        <meter id="experiencelevel" min="0" max="10" value="2">2 Years</meter>
+    </div>
         
     </section>  
 
@@ -83,10 +127,16 @@
         </ol>
     </section><hr>
 
+    <video width="320" controls>
+        <source src="./assets/video/funnyvideo.mp4" type="video/mp4" >
+        Your browser do not support this type of video.
+    </video>
+
     <!-- Section: Contacts -->  
      <section id="contact">
         <h2>Contact me</h2>
-        <form action="">
+        <form  action="https://formspree.io/f/myzlqdgn"
+  method="POST">
         <div>
             <label for="name">Name :</label> <input type="text" id="name" name="name" required/>
         </div>
@@ -96,21 +146,78 @@
         </div>
 
         <div>
+            <label for="age">Age :</label> <input type="number" id="age" name="age" min="18" max="50" required/>
+        </div>
+
+        <div>
+            <label for="website">Website :</label>
+            <input type="url" name="website" id="website" pattern="https?://.+"/>
+        </div>
+
+        <div>
+            <label for="image">Upload Image :</label>
+            <input type="file" name="image" id="image" accept="image/*"/>
+        </div>
+
+        <div>
+            <label for="subject">Subject</label>
+            <select name="subject" id="subject">
+                <option value="inquiry">Inquiry</option>
+                <option value="feedback">Feedback</option>
+                <option value="job">Job Opportunity</option>
+            </select>
+        </div>
+
+        <div>
             <label for="message">Message :</label>
         <textarea name="message" id="message" cols="20" rows="10"></textarea>
         </div>
 
+        
+
         <button type="submit">Submit</button>
         <button type="reset">Clear</button>
         </form>
-     </section>
+    </section>
+</main>
 
-    <!-- Section: Footer -->   
+    <!-- Footer -->   
      <footer>
         <p>Copyright reserved by &copy;Khondoker Rahat</p>
         <p>Developed with &hearts;</p>
-        <a href="tell: 01812658626">Call me</a>
+        <a href="tell: 01812658626">Call me</a> <br>
         <a href="mailto: khondokerrahat@gmail.com">Email me</a>
+        <div>
+            <h3>Follow Me</h3>
+        <ul>
+            <li>
+                <a href="https://www.facebook.com/khondoker.rahat.1/" target="_blank"> <i class="fa-brands fa-facebook"></i>
+                Facebook 
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/_khondoker_rahat" target="_blank"><i class="fa-brands fa-square-instagram"></i>
+                Instagram
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/KhondokerRahat" target="_blank"> <i class="fa-brands fa-square-github"></i>
+                GitHub 
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/khondoker-rahat-4751182bb/" target="_blank"> <i class="fa-brands fa-square-linkedin"></i>
+                Linkedin 
+                </a>
+            </li>
+        </ul>
+        </div>
+
+        <div>
+           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14722.475073916346!2d90.32420940723537!3d22.705231571728323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x375535d295ebef1f%3A0x26d80820a23345e8!2sNobogram%20Rd!5e0!3m2!1sen!2sbd!4v1763404597788!5m2!1sen!2sbd" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="home map"></iframe>
+        </div>
+
+        
         
      </footer>     
         
