@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="keywords" content="portfolio, html, HTML, khondoker rahat, Khondoker Rahat, khondokerrahat">
     <meta name="author" content="Khondoker Rahat">
+    <meta name="description" content="this website is about khondoker rahat" >
     <title>My Portfolio</title>
 
     <!-- Font-awesome cdn -->
@@ -51,7 +52,7 @@
      <em>
         <p>Future Web Developer and Student of  Computer Science and Engineering </p>
     </em>
-     <a href="https://www.facebook.com/khondoker.rahat.1/"><img src="./images/rahat.jpg" alt="Khondoker Rahat" height="150"></a>
+     <a href="https://www.facebook.com/khondoker.rahat.1/"><img src="./images/rahat.jpg" alt="Khondoker Rahat" target ="_blank" height="150"></a>
      <hr/>
     </section>
 
@@ -133,12 +134,16 @@
     </video>
 
     <!-- Section: Contacts -->  
+
      <section id="contact">
         <h2>Contact me</h2>
-        <form  action="https://formspree.io/f/myzlqdgn"
-  method="POST">
-        <div>
-            <label for="name">Name :</label> <input type="text" id="name" name="name" required/>
+        <form  action="https://formspree.io/f/myzlqdgn" method="POST">
+
+        <fieldset>
+            <legend>Personal Information</legend>
+            <div>
+            <label for="name">Name :</label>
+            <input type="text" id="name" name="name" required/>
         </div>
 
         <div>
@@ -147,6 +152,28 @@
 
         <div>
             <label for="age">Age :</label> <input type="number" id="age" name="age" min="18" max="50" required/>
+        </div>
+        </fieldset>
+
+        <div>
+            <label for="favorite">Favorite Color :</label>
+            <input type="color" id="favorite" name="favorite" value="#ff0000" required/>
+        </div>
+
+        <div>
+            <label for="exprience">Number of years learning web development :</label> <input type="range" id="exprience" name="exprience" min="0" max="10" required/>
+        </div>
+
+        <div>
+            <label for="Programming">Favorite Programming Language :</label>
+            <input list="Languages" id="Programming" name="Programming" required/>
+            <datalist id="Languages">
+                <option value="C"></option>
+                <option value="C++"></option>
+                <option value="Python"></option>
+                <option value="Java"></option>
+                <option value="Javascript"></option>
+            </datalist>
         </div>
 
         <div>

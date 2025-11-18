@@ -52,8 +52,22 @@
 - Form data send to your email
 - Multimedia 
 - HTML5 elements
-- Deploy
+- Deploy in netlify.com
 
-
+  
 ## Advanced HTML
+- More advanced form - <input type="color/range">    datalist, fieldset, legend
+- Web accessibility
+   - use semantic tag
+   - use lang attribute
+   - use heading tags in order ( h1 -> h2 -> h3)
+   - use alternative attribute for image tag
+   - contrast ratio
+   - use meaningful link text
+   - label (for) + input (id)
+   - meta tag: description, keywords
+- HTML5 API
+- HTML Templates and web components
+- Sources for symbols, icons, emojis, colors
+- Learning resources
 
